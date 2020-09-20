@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Yahtzee</title>
+        <link rel="stylesheet" href="yahtzee.css">
+    </head>
+
+    <body>
+        <a href='mode_select.html'><span class='back'>&lt Go Back</span></a>
+        <h1 class='shifted_head'></h1> <!-- head inserted via make_head() -->
+
+        <div id='notice'></div>
+
+        <div class='top_pad'></div>
+        <div class=dice_display></div> <!-- dice inserted via dice.render_dice() -->
+        <span id='submit_line'>
+            <span id='roll_count'></span> <!-- roll# inserted via js innerHTML -->
+            <button id='roll_display' onclick='dice.render_dice()'>Roll!</button>
+            <button id='submit' onclick='dice.submit_round();dice.render_dice();'>Submit</button> <!-- functions via dice.submit_round-->
+        </span>
+
+        <h2>Scoreboard</h2>
+        <div id='full_scoreboard'></div>
+    </body>
+
+    <script type="text/javascript" src="fo.js"></script>
+</html>

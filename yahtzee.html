@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Yahtzee</title>
+        <link rel='stylesheet' href='yahtzee.css'/>
+    </head>
+
+    <body>
+        <h1 id='main_head'></h1> <!--Head inserted via make_head()-->
+
+        <a href='mode_select.html'>
+            <div class='selector readybox'>
+                Click Here if You Already Know How to Play
+            </div>
+        </a>
+
+        <a href='instructions.html'>
+            <div class='selector helpbox'>
+                Click Here to Learn How to Play
+            </div>
+        </a>
+        
+        <script type="text/javascript">
+            function rand() {
+                return Math.ceil(Math.random()*6);
+            }
+
+            function make_head(header){
+                return `<img class='small_dice' src='${rand()}.png'> ${header} <img class='small_dice' src='${rand()}.png'>`;
+            };
+
+            document.getElementById('main_head').innerHTML = make_head("Welcome to Yahtzee");
+        </script>
+    </body>
+</html>

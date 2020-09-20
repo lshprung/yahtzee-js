@@ -1,0 +1,15 @@
+<div style='width:650px; height:300px;position:relative; border:1px solid #ccc'>
+    <b style='width:10px; height:10px; background:#000;position:absolute' id=ball></b>
+</div>
+<script>
+    var divH=document.querySelector('div').clientHeight,divW=document.querySelector('div').clientWidth;
+    var b=document.getElementById('ball'),x=divW/2-5,y=divH/2-5,dx=Math.random()*10-5,dy=Math.random()*10-5;
+    setInterval(function(){
+        b.style.left=x+'px';   b.style.top=y+'px';
+        x+=dx;
+        y+=dy;
+        if(y<1 || y>divH-11) dy=-dy;
+        if(x<1 || x>divW-11) dx=-dx;
+    },55);
+
+</script>

@@ -1,0 +1,276 @@
+*{
+    border: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    background-color: #ffd555;
+}
+
+/*BACK BUTTON*/
+.back{
+    background-color: #5fc2ef;
+    float: left;
+    padding: 0.5vw;
+    text-decoration: underline;
+    font-family: monospace;
+}
+
+h1{
+    padding: 1.784vw;
+    font-size: 250%;
+    background-color: #5fc2ef;
+}
+
+.shifted_head{
+    padding-right: 6vw;
+}
+
+h2{
+    padding: 1.5vw;
+}
+ /* BIG BUTTONS ON MAIN PAGE */
+.selector{
+    background-color: gray;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 25vw;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    padding-left: 10.9375vw;
+    padding-right: 10.9375vw;
+    margin-top: 4.167vh;
+    margin-bottom: 4.167vh;
+    font-size: 5vw;
+    height: 51.506vh;
+}
+
+.small_dice{
+    width: 2.5%;
+}
+
+a{
+    color: black;
+}
+
+.readybox{
+    float: left;
+    margin-left: 1.25vw;
+}
+
+.helpbox{
+    float: right;
+    margin-right: 1.25vw;
+}
+
+.dice_box{
+    text-align: center;
+}
+
+.dice_display{
+    display: flex;
+}
+
+.dice_box button{
+    background-color: inherit;
+}
+
+.dice_pics{
+    width: 64%
+}
+
+.dice_box input:checked ~ div { opacity: 1;}
+.dice_box div{ opacity: 0; }
+
+.dice_box > input{
+    display: none;
+}
+
+#roll_display{
+    display: inline;
+    width: 12vw;
+    height: 4vw;
+    background-color: #b7b5b5;
+    border: 5px solid black;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+    font-size: 1.5vw;
+    font-weight: bold; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.HOLD{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: orange;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 15px;
+    opacity: 0;
+}
+
+#round_list, #round_list2{
+    width: 48.5vw;
+    border: 2px solid gray;
+    background-color: #dedcdc;
+}
+
+#round_list{
+    float: left;
+}
+
+#round_list2{
+    float: right;
+}
+
+.round_line{
+    display: block;
+    border: 2px solid gray;
+    padding: 2.5px;
+}
+
+round{
+    font-size: 20px;
+    background-color: inherit;
+}
+
+.dropdown{
+    float: right;
+    background-color: inherit;
+    font-family: sans-serif;
+    text-align: right;
+}
+
+.rule_show{
+    background-color: gray;
+    padding: 50px;
+    color: gold;
+    font-size: 20px;
+}
+
+.top_pad{
+    padding-top: 20px;
+}
+
+#full_scoreboard{
+    width: 800px;
+    height: 1167.87px;
+    border: 5px solid black;
+    border-radius: 2px;
+    margin: 0 auto;
+    background-color: #e2e2e2;
+}
+
+#score_section1, #score_section2{
+    width: 786px;
+    height: 506px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+}
+
+#score_section2{
+    margin-top: 35px;
+    height: 607.2px;
+}
+
+#LOWER{
+    float: left;
+    font-weight: bold;
+    padding-left: 24px;
+    padding-top: 10px;
+}
+
+.grid_container{
+    border: 1px solid black;
+    padding-top: 15px;
+    padding-left: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#grid_element18{
+    border-bottom: initial;
+}
+
+#grid_element19{
+    border-top: initial;
+}
+
+#reminder span{
+    color: red;
+}
+
+#roll_count, #submit{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#roll_count{
+    float: left;
+    margin-left: 9.5vw;
+    background-color: orange;
+    padding: 20px;
+}
+
+#submit{
+    float: right;
+    margin-right: 9.5vw;
+    padding: 20px;
+    background-color: #00b8ff;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+#submit_line{
+    display: flex;
+}
+
+#score_val{
+    float: right;
+    margin-right: 50px;
+    padding-left: 50px;
+    border-left: 2px solid black;
+}
+
+#game_over{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#Thanks{
+    font-size: 7vw;
+    font-weight: bold;
+    font-family: cursive;
+    color: #8a0d0d;
+    padding-bottom: 5vw;
+}
+
+#final_score{
+    font-size: 10vw;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    color: #632c94;
+    margin-bottom: 5vw;
+}
+
+.end_select{
+    font-size: 3vw;
+    font-style: italic;
+    padding: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: #ffd;
+    background-color: #805058;
+    border-radius: 8px;
+}

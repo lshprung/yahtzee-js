@@ -1,0 +1,39 @@
+<!-- game.php?roll_num=0&round_num=0 -->
+
+<html>
+    <head>
+        <title>Yahtzee</title>
+        <link rel='stylesheet' href='yahtzee.css'/>
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <a href='yahtzee.html'><span class='back'>&lt Go Back</span></a>
+        <h1 id='main_head'></h1> <!-- head inserted by make_head() -->
+
+        <a href='game.html'>
+            <div class='selector readybox' style='background-color:#e2d6b2'>
+                Click Here to Play in Forced Order Mode
+            </div>
+        </a>
+
+        <a href='free.html' ><!-- not final href -->
+            <div class='selector helpbox' style='background-color:#e2d6b2'>
+                Click Here to Play in Free Choice Mode
+            </div>
+        </a>
+        
+        <script type="text/javascript">
+            function rand() {
+                return Math.ceil(Math.random()*6);
+            }
+
+            function make_head(header){
+                return `<img class='small_dice' src='${rand()}.png'> ${header} <img class='small_dice' src='${rand()}.png'>`;
+            };
+
+            document.getElementById('main_head').innerHTML = make_head('Pick Your Preferred Rules');
+        </script>
+    </body>
+</html>
